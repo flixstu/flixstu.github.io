@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.flixstalker" name="[B][COLOR lightblue]Flix[/B][COLOR white]Stalker[/COLOR]" version="1.0.0" provider-name="FlixStudios">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.31.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">FlixStalker</summary>
+        <description lang="en">FlixStalker</description>
+        <platform>all</platform>
+		<assets>
+    <icon>icon.png</icon>
+    </assets>
+    </extension>
+</addon>

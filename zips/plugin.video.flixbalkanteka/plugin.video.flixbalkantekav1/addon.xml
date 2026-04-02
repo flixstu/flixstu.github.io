@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.flixbalkanteka" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Balkanteka v1[/COLOR]" version="1.0.0" provider-name="FlixStudioss">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+	<import addon="script.module.resolveurl" version="5.1.0"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="flixbalkanteka.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>FlixBalkanteka v1</summary>
+        <description lang="en">FlixBalkanteka v1</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GPLv2</license>
+		<assets>
+        <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
