@@ -4,6 +4,9 @@ import os
 addon_xml = (
     '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
     '<addon id="repository.flixstudioss" name="[B][COLOR lightblue]Flix[/B][COLOR white]Studioss Repository[/COLOR]" version="1.0.0" provider-name="FlixStudioss">\n'
+    '    <requires>\n'
+    '        <import addon="xbmc.python" version="3.0.0"/>\n'
+    '    </requires>\n'
     '    <extension point="xbmc.addon.repository" name="FlixStudioss Repository">\n'
     '        <dir>\n'
     '            <info compressed="false">https://raw.githubusercontent.com/flixstu/flixstu.github.io/main/zips/addons.xml</info>\n'
