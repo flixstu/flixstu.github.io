@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "name": "Flixbuild 1",
+      "version": "1.0",
+      "kodi": "K21",
+      "url": "https://flixstu.github.io/zip/build1.zip",
+      "description": "The official Flixbuild 1 complete build."
+    }
+  ]
+}
