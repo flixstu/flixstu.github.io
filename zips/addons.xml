@@ -1,63 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.flixgen" name="[B][COLOR lightblue]Flix[/B][COLOR white]Gen[/COLOR]" version="1.0.0" provider-name="FlixStudios">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="pvr.stalker"/>
-    </requires>
-	<extension point="xbmc.python.pluginsource" library="flixgen.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>FlixGen - MAC Address Generator for Stalker</summary>
-        <description lang="en">FlixGen - MAC Address Generator for PVR Stalker Client playlist selection</description>
-        <platform>all</platform>
-        <language>en</language>
-        <license>GPLv2</license>
-		<assets>
-        <icon>icon.png</icon>
-        </assets>
-    </extension>
+<addon id="plugin.program.flixgen" name="[B][COLOR limegreen]Flix[/B][COLOR white]Gen[/COLOR]" version="1.0.0" provider-name="FlixStudios">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="pvr.stalker"/>
+    </requires>
+	<extension point="xbmc.python.pluginsource" library="flixgen.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>FlixGen - MAC Address Generator for Stalker</summary>
+        <description lang="en">FlixGen - MAC Address Generator for PVR Stalker Client playlist selection</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GPLv2</license>
+		<assets>
+        <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
 
-<addon id="plugin.video.flixbalkanteka" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Balkanteka v1[/COLOR]" version="1.0.0" provider-name="FlixStudioss">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-	<import addon="script.module.resolveurl" version="5.1.0"/>
-  </requires>
-	<extension point="xbmc.python.pluginsource" library="flixbalkanteka.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>FlixBalkanteka v1</summary>
-        <description lang="en">FlixBalkanteka v1</description>
-        <platform>all</platform>
-        <language>en</language>
-        <license>GPLv2</license>
+<addon id="plugin.program.flixwizard" name="Flixwizard" version="1.0.0" provider-name="FlixStudios">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Flixwizard is a lightweight template for installing builds on Kodi. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
+		<description lang="en_GB">Kodi Wizard</description>
+		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website> 
+		<email></email>
+		<source></source>
+		<news></news>
 		<assets>
-        <icon>icon.png</icon>
-        </assets>
-    </extension>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+	</extension>
 </addon>
 
-<addon id="plugin.video.flixbalkantekav2" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Balkanteka v2[/COLOR]" version="1.0.0" provider-name="FlixStudios">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-	<import addon="script.module.resolveurl" version="5.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>FlixBalkanteka v2</summary>
-    <description>FlixBalkanteka v2</description>
-    <platform>all</platform>
-	<assets>
-    <icon>icon.png</icon>
-    </assets>
-  </extension>
+<addon id="plugin.video.flixbalkanteka" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Balkanteka v1[/COLOR]" version="1.0.0" provider-name="FlixStudioss">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+	<import addon="script.module.resolveurl" version="5.1.0"/>
+  </requires>
+	<extension point="xbmc.python.pluginsource" library="flixbalkanteka.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>FlixBalkanteka v1</summary>
+        <description lang="en">FlixBalkanteka v1</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GPLv2</license>
+		<assets>
+        <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.flixbalkantekav2" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Balkanteka v2[/COLOR]" version="1.0.0" provider-name="FlixStudios">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+	<import addon="script.module.resolveurl" version="5.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>FlixBalkanteka v2</summary>
+    <description>FlixBalkanteka v2</description>
+    <platform>all</platform>
+	<assets>
+    <icon>icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 <addon id="plugin.video.flixstalker" name="[B][COLOR lightblue]Flix[/B][COLOR white]Stalker[/COLOR]" version="1.0.0" provider-name="FlixStudios">
@@ -96,24 +126,24 @@
     </extension>
 </addon>
 
-<addon id="script.module.flixgen" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Generator[/COLOR]" version="1.0.0" provider-name="FlixStudios">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="pvr.stalker"/>
-    </requires>
-	<extension point="xbmc.python.script" library="flixgen.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Generator</summary>
-        <description lang="en">Generator</description>
-        <platform>all</platform>
-        <language>en</language>
-        <license>GPLv2</license>
-		<assets>
-        <icon>icon.png</icon>
-        </assets>
-    </extension>
+<addon id="script.module.flixgen" name="[B][COLOR lightblue]Flix[/B] [COLOR white]Generator[/COLOR]" version="1.0.0" provider-name="FlixStudios">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="pvr.stalker"/>
+    </requires>
+	<extension point="xbmc.python.script" library="flixgen.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Generator</summary>
+        <description lang="en">Generator</description>
+        <platform>all</platform>
+        <language>en</language>
+        <license>GPLv2</license>
+		<assets>
+        <icon>icon.png</icon>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="script.module.resolveurl" name="ResolveURL" version="5.1.185" provider-name="gujal">
@@ -143,35 +173,6 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon>
-<addon id="plugin.program.flixwizard" name="Flixwizard" version="1.0.0" provider-name="FlixStudios">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Flixwizard is a lightweight template for installing builds on Kodi. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
-		<description lang="en_GB">Kodi Wizard</description>
-		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website> 
-		<email></email>
-		<source></source>
-		<news></news>
-		<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<banner></banner>
-				<clearlogo></clearlogo>
-				<screenshot></screenshot>
-		</assets>
-	</extension>
 </addon>
 
 </addons>
