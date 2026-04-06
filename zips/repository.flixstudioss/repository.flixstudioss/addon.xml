@@ -15,7 +15,7 @@
         <description lang="en">Official FlixStudioss Repository for all our Kodi Addons.</description>
         <platform>all</platform>
         <assets>
-            <icon>icon.png</icon>
+            <icon>icon.jpg</icon>
         </assets>
     </extension>
 </addon>
