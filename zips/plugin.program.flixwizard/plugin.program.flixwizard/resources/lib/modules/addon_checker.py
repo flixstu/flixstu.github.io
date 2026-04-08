@@ -42,7 +42,7 @@ def check_addons():
 
 def check_build_update():
     """Checks for build update from remote text file."""
-    if build_version_url in ('', 'https://github.com/flixstu/flixstu.github.io/blob/main/zips/version.txt'):
+    if build_version_url in ('', 'https://flixstu.github.io/zips/version.txt'):
         return
 
     try:

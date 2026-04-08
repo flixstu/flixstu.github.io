@@ -11,7 +11,7 @@ notify_url  = 'http://CHANGEME'
 changelog_dir  = 'http://CHANGEME/'
 
 '''#####-----Build Version File-----#####'''
-build_version_url = 'https://github.com/flixstu/flixstu.github.io/blob/main/zips/version.txt'
+build_version_url = 'https://flixstu.github.io/zips/version.txt'
 
 '''#####-----Excludes-----#####'''
 excludes  = ['plugin.video.whatever']
