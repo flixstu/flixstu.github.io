@@ -8,7 +8,8 @@ from .addonvar import setting, setting_set, addon_name, addon_icon, isBase64, he
 from .build_install import restore_binary, binaries_path, build_install
 from .addons_enable import enable_addons
 from .save_data import backup_gui_skin
-from . import  notify
+from .import  notify
+from .addon_checker import check_addons, check_build_update
 
 class Startup:
     def check_updates(self):
@@ -163,6 +164,8 @@ class Startup:
             setting_set('notifyversion', str(notify_version))
     
     def run_startup(self):
+        check_addons()
+        check_build_update()
         if setting('firstrunSave') != 'true':
             self.save_menu()
             xbmc.sleep(2000)
