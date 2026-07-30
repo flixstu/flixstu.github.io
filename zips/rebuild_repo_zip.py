@@ -9,9 +9,9 @@ addon_xml = (
     '    </requires>\n'
     '    <extension point="xbmc.addon.repository" name="FlixStudioss Repository">\n'
     '        <dir>\n'
-    '            <info compressed="false">https://raw.githubusercontent.com/flixstu/flixstu.github.io/main/zips/addons.xml</info>\n'
-    '            <checksum>https://raw.githubusercontent.com/flixstu/flixstu.github.io/main/zips/addons.xml.md5</checksum>\n'
-    '            <datadir zip="true">https://raw.githubusercontent.com/flixstu/flixstu.github.io/main/zips/</datadir>\n'
+    '            <info compressed="false">https://flixstu.github.io/zips/addons.xml</info>\n'
+    '            <checksum>https://flixstu.github.io/zips/addons.xml.md5</checksum>\n'
+    '            <datadir zip="true">https://flixstu.github.io/zips/</datadir>\n'
     '        </dir>\n'
     '    </extension>\n'
     '    <extension point="xbmc.addon.metadata">\n'
@@ -19,7 +19,7 @@ addon_xml = (
     '        <description lang="en">Official FlixStudioss Repository for all our Kodi Addons.</description>\n'
     '        <platform>all</platform>\n'
     '        <assets>\n'
-    '            <icon>icon.png</icon>\n'
+    '            <icon>icon.jpg</icon>\n'
     '        </assets>\n'
     '    </extension>\n'
     '</addon>\n'
@@ -32,14 +32,14 @@ with open(addon_xml_path, 'w', encoding='utf-8', newline='\n') as f:
 print('addon.xml written cleanly')
 
 # Rebuild zip with clean content written directly (no reading from disk)
-icon_path = r'repository.flixstudioss\repository.flixstudioss\icon.png'
+icon_path = r'repository.flixstudioss\repository.flixstudioss\icon.jpg'
 zip_out = r'repository.flixstudioss\repository.flixstudioss-1.0.0.zip'
 
 with zipfile.ZipFile(zip_out, 'w', zipfile.ZIP_DEFLATED) as zf:
     zf.writestr('repository.flixstudioss/addon.xml', addon_xml.encode('utf-8'))
     if os.path.exists(icon_path):
-        zf.write(icon_path, 'repository.flixstudioss/icon.png')
-        print('icon.png added')
+        zf.write(icon_path, 'repository.flixstudioss/icon.jpg')
+        print('icon.jpg added')
 
 print('Zip rebuilt cleanly')
 
