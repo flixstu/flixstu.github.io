@@ -5,20 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flix</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #111;
+            min-height: 100vh;
+            background-color: #0a0a0a;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        h1 {
             font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #4fc3f7, #0288d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: #888;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #4fc3f7;
+        }
+        .card h2 {
+            font-size: 1.3rem;
+        }
+        .card p {
+            color: #999;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .card .meta {
+            color: #666;
+            font-size: 0.8rem;
+        }
+        a.btn {
+            display: inline-block;
+            background: #4fc3f7;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        a.btn:hover {
+            background: #81d4fa;
+        }
+        .instructions {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .instructions h3 {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 12px;
+        }
+        .instructions ol {
+            color: #999;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        .instructions code {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #4fc3f7;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
-    Flix
+    <h1>Flix</h1>
+    <p class="subtitle">Kodi Repository</p>
+
+    <div class="cards">
+        <div class="card">
+            <h2>FlixStudioss Repository</h2>
+            <p>Add this repository to access all FlixStudioss addons.</p>
+            <span class="meta">repository.flixstudioss v1.0.0</span>
+            <a class="btn" href="zips/repository.flixstudioss/repository.flixstudioss-1.0.0.zip">Download Repository</a>
+        </div>
+
+        <div class="card">
+            <h2>FlixWizard</h2>
+            <p>Lightweight wizard for installing Kodi builds.</p>
+            <span class="meta">plugin.program.flixwizard v1.0.0</span>
+            <a class="btn" href="zips/plugin.program.flixwizard/plugin.program.flixwizard-1.0.0.zip">Download Addon</a>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h3>Installation</h3>
+        <ol>
+            <li>Download the Repository zip above</li>
+            <li>In Kodi, go to <strong>Add-ons</strong> &gt; <strong>Install from zip file</strong></li>
+            <li>Select the downloaded zip file</li>
+            <li>Go to <strong>Install from repository</strong> &gt; <strong>FlixStudioss Repository</strong></li>
+        </ol>
+    </div>
 </body>
 </html>
