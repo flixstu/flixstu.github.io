@@ -1,10 +1,10 @@
 {
   "builds": [
     {
-      "name": "FlixKodi v21 Release",
-      "version": "1.2",
+      "name": "FlixKodi v21.3 Release",
+      "version": "2.0",
       "kodi": "K21",
-      "url": "https://flixstu.github.io/zip/build2.zip",
+      "url": "https://flixstu.github.io/zip/build3.zip",
       "description": "FlixKodi Release"
     },
     {
