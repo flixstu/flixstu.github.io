@@ -77,4 +77,22 @@
       </assets>
   </extension>
     </addon>
+    <addon id="plugin.video.flixturkish" name="FlixTurkish" version="1.0.9" provider-name="FlixTurkish">
+  <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+      <import addon="script.module.resolveurl" version="5.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">FlixTurkish</summary>
+      <description lang="en_GB">FlixTurkish</description>
+      <platform>all</platform>
+      <assets>
+          <icon>icon.jpg</icon>
+      </assets>
+  </extension>
+    </addon>
+
 </addons>

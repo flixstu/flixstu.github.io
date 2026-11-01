@@ -114,6 +114,7 @@ def main():
     addon_dirs = {
         'plugin.program.flixwizard': 'plugin.program.flixwizard',
         'script.module.resolveurl': 'script.module.resolveurl',
+        'plugin.video.flixturkish': 'plugin.video.flixturkish',
     }
 
     for addon_id, dirname in sorted(addon_dirs.items()):
